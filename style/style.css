@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+header {
+    position: absolute;
+    width: 95%;
+
+}
+
+header ul {
+    list-style: none;
+    display: inline-block;
+}
+
+header li {
+    display: inline-block;
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.ul-header01 {
+    float: left;
+
+}
+
+.ul-header01 a {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.ul-header02 {
+    display: none;
+}
+
+.ul-header03 {
+    float: right;
+}
+
+.ul-header03 a {
+    font-size: 3rem;
+}
+
+@media (min-width:800px) {
+
+
+    .ul-header02 {
+        display: inline-block;
+
+    }
+
+    .ul-header02 a,
+    .ul-header01 a,
+    .ul-header03 a {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    header div {
+        float: right;
+
+    }
+
+}
+
+
+/*  Navbar */
+
+
+
+.left-nav {
+
+    width: 100%;
+    height: 190vh;
+    background-color: #d65627;
+
+}
+
+.left-nav h1 {
+    position: absolute;
+    top: 100px;
+    margin-left: 40px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.left-nav p {
+    position: absolute;
+    top: 550px;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.left-nav button {
+    position: absolute;
+    top: 600px;
+    margin-left: 40px;
+    width: 150px;
+    height: 40px;
+
+}
+
+.left-nav button:hover {
+    background: black;
+    color: #fff;
+    
+    border-radius: 40%;
+    transition: 1000ms;
+}
+
+navbar img {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    top: 650px;
+
+
+}
+
+.shape {
+    display: none;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #d65627;
+    margin-left: 50%;
+    margin-top: -130px;
+}
+
+@media(min-width: 800px) {
+
+    .right-nav {
+        position: absolute;
+        width: 50%;
+        height: 120vh;
+        background-color: #fff;
+        margin-left: 50%;
+        top: 0;
+    }
+
+    .left-nav {
+        height: 120vh;
+    }
+
+    navbar img {
+        top: 100px;
+        margin-left: 40%;
+    }
+
+    header div {
+
+        position: absolute;
+        z-index: 2;
+        right: 0;
+    }
+
+    .shape {
+        display: block;
+    }
+    .left-nav h1 {
+        font-size: 5rem
+    }
+
+    .left-nav p {
+        font-size: 1rem
+    }
+
+}
+
+;
+
+/* Catagories section */
+
+.catagories {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.catagories h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    font-size: 3.5rem;
+
+}
+
+hr {
+    left: 0;
+    right: 0;
+    width: 40%;
+    border: 2px solid #d65627;
+}
+
+.catagories P {
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.catagories a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.catagories a:hover,
+.catagories a:focus {
+    background-color: #d65627;
+    color: #fff;
+}
+
+.newBrands,
+.Shoes {
+    /* position: absolute; */
+    background-color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newBrands h1,
+.Shoes h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+.newBrands div,
+.Shoes div {
+    background-color: rgb(235, 230, 230);
+    width: 90%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.newBrands img,
+.Shoes img {
+    height: 200px;
+    width: 200px;
+    /* padding-top: 25px; */
+}
+
+.newBrands span,
+.Shoes span {
+    display: block;
+    text-align: left;
+    width: 45px;
+    font-size: 1.5rem;
+    background-color: #d65627;
+    color: #fff;
+    font-weight: bold;
+}
+
+.catagories .see {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+}
+
+.newBrands a:hover {
+    background-color: #d65627;
+}
+
+.newBrands button,
+.Shoes button {
+    background-color: #d65627;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    margin: 4%;
+}
+
+.newBrands button:hover,
+.newBrands button:focus {
+    background: black;
+    color: #fff;
+    border-radius: 40%;
+    transition: 1000ms;
+}
+
+.Shoes button:hover,
+.Shoes button:focus {
+    background: black;
+    color: #fff;
+    border-radius: 40%;
+    transition: 1000ms;
+}
+
+
+.save {
+    background-color: #d65627;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-bottom: 70px;
+}
+
+.save h1 {
+    color: #fff;
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.save button {
+    background-color:#fff;
+    color: #d65627;
+    width: 150px;
+    height: 40px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.save button:hover,
+.save button:focus{
+    background: black;
+    color: #fff;
+    border-radius: 40%;
+    transition: 1000ms;
+}
+
+@media(min-width:600px) {
+
+    .newBrands div,
+    .Shoes div {
+        display: inline-block;
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .catagories .see {
+        margin-top: 60px;
+    }
+
+    .save {
+        /* background-color: -webkit-linear-gradient(65deg, #d65627), url("/assets/bag.jpg"); */
+        background-image:linear-gradient(120deg, #d65627 50%, transparent 50%), url(./assets/bag.jpg);
+        
+        
+    }
+}
+
+
+@media(min-width:800px) {
+
+    .newBrands div,
+    .Shoes div {
+        display: inline-block;
+        width: 22.5%;
+        margin-left: 0;
+    }
+
+    .newBrands h1,
+    .Shoes h1 {
+        margin-left: 40px;
+    }
+
+    .catagories .see {
+        margin-top: 60px;
+    }
+}
+
+/* boot */
+
+.boot {
+    width: 100%;
+    background-color: #d65627;
+    text-align: center;
+}
+
+.boot h1 {
+    text-align: left;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.boot div {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+.boot div img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: -40px; */
+    
+}
+
+.boot span {
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+@media (min-width:600px) {
+    .boot div {
+        display: inline-block;
+        width: 40%;
+        margin:20px 20px 0 20px;
+        text-align: center;
+        
+    }
+
+    .boot img {
+        padding: 20px;
+    }
+}
+
+@media (min-width:800px) {
+    .boot div {
+        display: inline-block;
+        width: 13%;
+        margin: 40px 60px 0 60px;
+        text-align: center;
+        
+    }
+    .boot img {
+        padding: 20px;
+    }
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding:  7% 7%;
+    background-color: black;
+}
+
+#footer div {
+    text-align: center;
+}
+
+#footer i {
+    /* margin: 0 10px 10px; */
+}
+
+#footer a {
+    color: #fff;
+    text-align: center;
+}
+
+#footer li {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+
+#footer a:hover {
+    color: #d65627;
+}
